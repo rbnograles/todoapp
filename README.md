@@ -1,4 +1,4 @@
-# **`Todo App`**
+# **Todo App**
 
 > ### **About the project**:
 
@@ -51,4 +51,4 @@ Please make sure to update tests as appropriate.
 
 > ### **Lead Developer and Graphic Designer**
 
-- `Ryan Nograles` :bowtie:
+- Ryan Nograles :bowtie:
