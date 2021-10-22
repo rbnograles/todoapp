@@ -2,7 +2,9 @@
 
 > ### **About the project**:
 
-    This is a simple todo application project that aims to take your basic todo app into a whole new level with great **`UI/UX`** designs. This is currenty in starting point of the development.
+    This is a simple todo application project that aims to take your basic todo app into a whole new level with great **`UI/UX`** designs.
+
+    This is currenty in starting point of the development.
 
     I created this project to practise my mobile development using the language i am accustomed with.
 
