@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavigationContainer, DarkTheme } from '@react-navigation/native';
+import React, { useState } from 'react';
+import { NavigationContainer, DarkTheme, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { 
   StyleSheet, 
@@ -13,12 +13,14 @@ import { TaskScreen } from './screens/TaskScreen';
 const Stack = createNativeStackNavigator();
 
 export default function App () {
-  console.log(DarkTheme)
+  
+  const [theme, setTheme] = useState('default');
+
   return (
     <SafeAreaView style={styles.container}>
-      <NavigationContainer theme={DarkTheme}>
+      <NavigationContainer theme={theme === "default" ? DefaultTheme : DarkTheme}>
         <Stack.Navigator>
-          <Stack.Screen name="Task" component={TaskScreen} />
+          <Stack.Screen name="Today's Task" component={TaskScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
