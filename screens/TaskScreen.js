@@ -34,24 +34,24 @@ export const TaskScreen = () => {
 
   return (
       <>
-          <View style={styles.taskWrapper}>
-              <ScrollView style={styles.scrollView}>
-              <View style={styles.items}>
-                {
-                  taskList.map((task, i) => {
-                      return <TouchableOpacity key={i} onPress={() => handleCompleteTask(i)}>
-                          <Task  taskName={task} />
-                      </TouchableOpacity>
-                  })
-                }
-                </View>
-            </ScrollView>
-          </View>
-          <WriteTaskComponent 
-            handleAddTask={handleAddTask}
-            setTask={setTask}
-            task={task}
-          />     
+        <View style={styles.taskWrapper}>
+          <ScrollView style={styles.scrollView}>
+            <View style={styles.items}>
+              {
+                taskList.map((task, i) => {
+                    return <TouchableOpacity key={i} onPress={() => handleCompleteTask(i)}>
+                        <Task  taskName={task} />
+                    </TouchableOpacity>
+                })
+              }
+              </View>
+          </ScrollView>
+        </View>
+        <WriteTaskComponent 
+          handleAddTask={handleAddTask}
+          setTask={setTask}
+          task={task}
+        />     
       </>
     )
 }

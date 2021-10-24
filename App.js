@@ -3,8 +3,7 @@ import { NavigationContainer, DarkTheme, DefaultTheme } from '@react-navigation/
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { 
   StyleSheet, 
-  SafeAreaView, 
-  StatusBar
+  SafeAreaView
 } from 'react-native';
 
 import { TaskScreen } from './screens/TaskScreen';
@@ -30,7 +29,6 @@ export default function App () {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#e8eaed',
-    paddingTop: StatusBar.currentHeight,
+    backgroundColor: '#e8eaed'
   }
 });
